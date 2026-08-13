@@ -43,6 +43,10 @@ const workGroups = [
         { file:'images/roblox-11.jpg', label:'Morioh - Details' },
         { file:'images/roblox-12.jpg', label:'Morioh - Suburb Overview' },
       ],
+      [
+        { file:'images/roblox-13.jpg', label:'Colosseum — Exterior' },
+        { file:'images/roblox-14.jpg', label:'Colosseum — Arena Interior' },
+      ],
     ],
   },
   {
@@ -65,8 +69,7 @@ workGroups.forEach((group) => {
   section.className = 'work-group';
   const quadsHTML = group.sets.map((imgs) => `
     <div class="work-quad">
-      ${[0,1,2,3].map(i => {
-        const img = imgs[i] || {};
+      ${imgs.map((img, i) => {
         const label = img.label || `${group.name} ${i+1}`;
         const src = img.file || '';
         return `
