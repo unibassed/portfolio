@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — 3D Artist / Maps, Assets & Rigs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand"><span class="dot"></span> Unibased <span class="mono" style="color:var(--text-faint); font-weight:400;">/ 3D</span></div>
+    <div class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#timeline">Experience</a>
+      <a href="#contact">Contact</a>
+      <span class="mono">BLENDER · ROBLOX STUDIO</span>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">3D Artist · Roblox pipeline</div>
+      <h1>6 years turning Blender files into <span class="accent">playable worlds.</span></h1>
+      <p class="sub">Maps, hard-surface assets and character rigs, built end to end for Roblox — from blockout to final export.</p>
+      <div class="btn-row">
+        <a href="#work" class="btn btn-primary">View work</a>
+        <a href="#contact" class="btn btn-ghost">Contact me</a>
+      </div>
+    </div>
+    <div class="photo-stack">
+      <div class="photo-card pc-1">
+        <img src="images/hero-1.jpg" data-fallback-title="asset_01" onerror="handleImgError(this)" onclick="openLightbox(this)">
+        <div class="cap mono">asset_01.jpg</div>
+      </div>
+      <div class="photo-card pc-2">
+        <img src="images/hero-2.jpg" data-fallback-title="asset_02" onerror="handleImgError(this)" onclick="openLightbox(this)">
+        <div class="cap mono">asset_02.jpg</div>
+      </div>
+      <div class="photo-card pc-3">
+        <img src="images/hero-3.jpg" data-fallback-title="asset_03" onerror="handleImgError(this)" onclick="openLightbox(this)">
+        <div class="cap mono">asset_03.jpg</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="display">What I build</h2>
+      <div class="mono">03 DISCIPLINES</div>
+    </div>
+    <div class="services">
+      <div class="service">
+        <div class="num mono">01 / MAP</div>
+        <svg viewBox="0 0 40 40" fill="none" stroke="var(--accent-2)" stroke-width="1.6"><path d="M5 14 Q13 6 20 12 T35 14"/><path d="M4 22 Q13 14 21 20 T36 22"/><circle cx="20" cy="12" r="1.6" fill="var(--accent-2)" stroke="none"/></svg>
+        <h3>Level &amp; Map Design</h3>
+        <p>Full environments blocked out and dressed for Roblox — terrain, layout and prop placement for readable, performant play spaces.</p>
+      </div>
+      <div class="service">
+        <div class="num mono">02 / ASSET</div>
+        <svg viewBox="0 0 40 40" fill="none" stroke="var(--accent-2)" stroke-width="1.6"><path d="M20 4 L34 11 L34 27 L20 34 L6 27 L6 11 Z"/><path d="M6 11 L20 18 L34 11 M20 18 L20 34"/></svg>
+        <h3>Asset Modeling</h3>
+        <p>Hard-surface and stylized props, from blockout to bake — clean topology and a triangle budget that fits the target platform.</p>
+      </div>
+      <div class="service">
+        <div class="num mono">03 / RIG</div>
+        <svg viewBox="0 0 40 40" fill="none" stroke="var(--accent-2)" stroke-width="1.6"><circle cx="20" cy="8" r="4"/><path d="M20 12 L20 22 M20 15 L11 21 M20 15 L29 21 M20 22 L13 34 M20 22 L27 34"/></svg>
+        <h3>Character Rigging</h3>
+        <p>Game-ready skeletons and weight painting built for animation in Roblox Studio, from simple props to full humanoid rigs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="display">Experience</h2>
+      <div class="mono">6 YEARS — 2019 → 2026</div>
+    </div>
+    <div class="timeline">
+      <div class="tl-line"></div>
+      <div class="tl-item"><div class="dt"></div><div class="yr mono">2019</div><div><h4>Started in Roblox Studio</h4><p>I started learning the basics of building inside Roblox Studio doing basic maps for some games like Undertale Awakened Era.</p></div></div>
+      <div class="tl-item"><div class="dt"></div><div class="yr mono">2021</div><div><h4>Started Asset modelling in Blender</h4><p>Started using Blender and I introduced myself into 3D modelling.</p></div></div>
+      <div class="tl-item"><div class="dt"></div><div class="yr mono">2023</div><div><h4>Led environment art on multiplayer maps</h4><p>I learned more about lightning and some vfx to make a cool ambient for maps and some models.</p></div></div>
+      <div class="tl-item"><div class="dt"></div><div class="yr mono">2026</div><div><h4>Learned more enviormental skills</h4><p>Learned more enviormental skills.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="display">Selected work</h2>
+      <div class="mono">GROUPED BY TOOL</div>
+    </div>
+    <div id="workGroups"></div>
+  </div>
+</section>
+
+<section class="section" id="contact" style="border-bottom:none;">
+  <div class="wrap contact-inner">
+    <h2>Have a Roblox project that needs maps, assets or rigs?</h2>
+    <div class="contact-links mono">
+      <a href="mailto:unibassed@gmail.com">unibassed@gmail.com</a>
+      <a href="#">discord: unibased</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Unibased</span>
+    <span class="mono">Made in Blender</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose">&times;</div>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
