@@ -69,13 +69,19 @@ workGroups.forEach((group) => {
   section.className = 'work-group';
   const quadsHTML = group.sets.map((imgs) => `
     <div class="work-quad">
-      ${imgs.map((img, i) => {
-        const label = img.label || `${group.name} ${i+1}`;
-        const src = img.file || '';
+      ${imgs.map((item, i) => {
+        const label = item.label || `${group.name} ${i+1}`;
+        const src = item.file || '';
+        const isVideo = item.type === 'video' || src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov') || src.endsWith('.m4v');
+
+        const mediaHTML = isVideo 
+          ? `<video src="${src}" controls playsinline preload="metadata" style="width:100%; height:100%; object-fit:cover; display:block;"></video>`
+          : `<img src="${src}" data-fallback-title="${label}" onerror="handleImgError(this)" onclick="openLightbox(this)">`;
+
         return `
           <div class="work-box">
             <div class="media">
-              <img src="${src}" data-fallback-title="${label}" onerror="handleImgError(this)" onclick="openLightbox(this)">
+              ${mediaHTML}
             </div>
             <div class="cap">${label}</div>
           </div>`;
