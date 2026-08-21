@@ -59,6 +59,16 @@ const workGroups = [
         { file:'images/blender-3.png', label:'Pets render — Modeling' },
         { file:'images/blender-4.png', label:'Spamton Neo — Rig' },
       ],
+      [
+        { file:'images/blender-5.png', label:'Dio Brando Clothing JJBA' },
+        { file:'images/blender-6.png', label:'Bailarina' },
+        { file:'images/blender-7.png', label:'Cloud Sword Low Poly' },
+        { file:'images/blender-8.png', label:'Monster Model (Rigged) ' },
+      ],
+      [
+        { file: 'images/video1.mp4', label: 'Monster Model animation 1' },
+        { file: 'images/video2.mp4', label: 'Monster Model animation 2' }
+      ],
     ],
   },
 ];
