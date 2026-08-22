@@ -46,7 +46,7 @@ const workGroups = [
       [
         { file:'images/roblox-13.jpg', label:'Colosseum — Exterior' },
         { file:'images/roblox-14.jpg', label:'Colosseum — Arena Interior' },
-        { file:'images/roblox-15.jpg', label:'Spartan temple' },
+        { file:'images/roblox-15.jpg', label:'Spartan temple 1' },
         { file:'images/video3.mp4', label:'Spartan temple 2' },
       ],
     ],
